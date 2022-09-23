@@ -27,6 +27,12 @@ This repository contains dockerfile for Apache Airflow 2.0 as well as a docker-c
 #### To stop airflow :
       docker-compose down
 
+That's it, Airflow Webserver UI should now be available at: http://localhost:8080 and Celery Flower UI at: http://localhost:5555
+
+> **Note:** Default login credentials are:
+    **Username** : airflow 
+    **Password** : airflow
+    
 ---
 
 ## Repo Usage
@@ -45,8 +51,4 @@ docker-compose up -d --remove-orphans
 ```
 
 
-That's it, Airflow Webserver UI should now be available at: http://localhost:8080 and Celery Flower UI at: http://localhost:5555
 
-> **Note:** Default login credentials are:
-    **Username** : airflow 
-    **Password** : airflow
