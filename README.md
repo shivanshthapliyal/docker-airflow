@@ -20,13 +20,13 @@ This repository contains dockerfile for Apache Airflow 2.0 as well as a docker-c
       wget https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/Dockerfile https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/requirements.txt https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/docker-compose.yml
 
 
-### To build docker image locally : 
+#### To build docker image locally : 
 >Add any pip requirements if needed to requirements.txt
 
       docker build -t docker-airflow .
-### To run airflow : 
+#### To run airflow : 
       docker-compose up
-### To stop airflow :
+#### To stop airflow :
       docker-compose down
 
 ---
