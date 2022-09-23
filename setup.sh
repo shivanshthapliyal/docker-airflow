@@ -8,6 +8,12 @@ if [ -x "$(command -v docker)" ]; then
         then
             if [ ! -f ./Dockerfile ] || [ ! -f ./requirements.txt ] || [ ! -f ./docker-compose.yml ]
             then
+                if [ -x "$(command -v wget)" ]; then
+                    echo "wget command installed already.."
+                else
+                    echo "Install wget first..\nOn Linux: sudo apt-get install wget\nOn Mac: brew install wget"
+                    exit 1
+                fi;
                 wget https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/Dockerfile https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/requirements.txt https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/docker-compose.yml
             fi;
             # To build docker image locally : 
