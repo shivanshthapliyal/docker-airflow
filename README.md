@@ -13,8 +13,25 @@ This repository contains dockerfile for Apache Airflow 2.0 as well as a docker-c
 > Docker for Mac already includes Compose along with other Docker apps, so Mac users do not need to install Compose separately.
 
 ---
+## Quickstart
 
-## Usage
+### Download dockerfile
+   
+      wget https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/Dockerfile https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/requirements.txt https://raw.githubusercontent.com/shivanshthapliyal/docker-airflow/main/docker-compose.yml
+
+
+### To build docker image locally : 
+>Add any pip requirements if needed to requirements.txt
+
+      docker build -t docker-airflow .
+### To run airflow : 
+      docker-compose up
+### To stop airflow :
+      docker-compose down
+
+---
+
+## Repo Usage
 
 **Step 1.** Clone the Repository
 ```
