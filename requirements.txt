@@ -1,2 +1,2 @@
-cryptography==2.5
-awscli==1.19.55
+# cryptography==2.5
+# awscli==1.19.55
