@@ -1,6 +1,6 @@
 # docker-airflow
 
-This repository contains dockerfile for Apache Airflow 2.0 as well as a docker-compose to spin up a airflow cluster using the Celery Executor. 
+This repository contains dockerfile for Apache Airflow 2.3.4 as well as a docker-compose to spin up a airflow cluster using the Celery Executor. 
 
 
 
