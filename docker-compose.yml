@@ -43,6 +43,8 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__CATCHUP_BY_DEFAULT: "False"
     AIRFLOW_UID: "10001"
     AIRFLOW_GID: "10001"
+    AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
+    AWS_SECRET_KEY: ${AWS_SECRET_KEY}
   volumes:
     - ./dags:/opt/airflow/dags
     - ./includes:/opt/airflow/includes
