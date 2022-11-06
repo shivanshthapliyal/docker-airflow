@@ -1,1 +1,0 @@
-crypto,celery,postgres,hive,jdbc,mysql,amazon,docker,jenkins,ldap,redis
